@@ -47,6 +47,7 @@ int main(){
             cout<<" 1) Capturar enteros"<<endl;
             cout<<" 2) Mostrar cadena n veces"<<endl;
             cout<<" 3) Agregar personajes"<<endl;
+            cout<<" 4) Mostrar personajes"<<endl;
             cout<<" 0) Salir"<<endl;
             cin>>opcion;
             fflush(stdin);
@@ -66,6 +67,9 @@ int main(){
 
             case '3':   capturar_personajes();
                 break;    
+
+            case '4':    mostrar_personajes();
+                break;
             
             case '0': cout<<"Saliendo..."<<endl;
                 break;
