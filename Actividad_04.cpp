@@ -12,10 +12,12 @@ void capturar_enteros(){
             cout<<"\nIngrese un numero: ";
             cin>>enteros[i];
         }
+        cout<<"\n";
         for (size_t i = 0; i < 5; i++)
         {
-            cout<<enteros[i]<<" "<<endl;
+            cout<<enteros[i]<<" ";
         }
+        cout<<"\n";
         for (size_t i = 0; i < 5; i++)
         {
            suma += enteros[i];
