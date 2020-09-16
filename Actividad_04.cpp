@@ -25,9 +25,23 @@ void capturar_enteros(){
         cout<<"\n";
     }
 
+void mostrar_cadena(int n, char cadena[]){
+
+    for (size_t i = 0; i < n; i++)
+    {
+        cout<<cadena<<endl;
+    }
+    cout<<"\n";
+
+}
+
 int main(){
 
     char opcion; 
+    int n;
+    char cadena[20];
+    
+
     do{     fflush(stdin);
             cout<<" 1) Capturar enteros"<<endl;
             cout<<" 2) Mostrar cadena n veces"<<endl;
@@ -42,7 +56,11 @@ int main(){
                 
                 break;
             
-            case '2':
+            case '2':   cout<<"Escribe una cadena de hasta 20 caracteres: ";
+                        cin.getline(cadena,20,'\n');
+                        cout<<"Veces que quieres que se imprima la cadena: ";
+                        cin>>n;
+                        mostrar_cadena(n, cadena);
                 break;
 
             case '3':
