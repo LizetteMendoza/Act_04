@@ -1,4 +1,5 @@
 #include<iostream>
+#include"personaje.h"
 
 using namespace std;
 
@@ -63,7 +64,7 @@ int main(){
                         mostrar_cadena(n, cadena);
                 break;
 
-            case '3':
+            case '3':   capturar_personajes();
                 break;    
             
             case '0': cout<<"Saliendo..."<<endl;
