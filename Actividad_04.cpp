@@ -64,6 +64,7 @@ int main(){
                         cin.getline(cadena,20,'\n');
                         cout<<"Veces que quieres que se imprima la cadena: ";
                         cin>>n;
+                        fflush(stdin);
                         mostrar_cadena(n, cadena);
                 break;
 

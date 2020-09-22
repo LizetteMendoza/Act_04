@@ -15,11 +15,13 @@ unsigned int con = 0;
 
 void capturar_personajes(){
     if(con<5){
+        fflush(stdin);
         cout<<"Nombre: ";
         cin.getline(personajes[con].nombre,20,'\n');
         cout<<"Tipo: ";
         cin.getline(personajes[con].tipo,20,'\n');
         cout<<"Fuerza: ";
+        fflush(stdin);
         cin>>personajes[con].fuerza;
         cout<<"Salud: ";
         cin>>personajes[con].salud;
